@@ -1,6 +1,6 @@
 google.maps.event.addDomListener(window, 'load', function() {
   var map = new google.maps.Map(document.getElementById('map-canvas'), {
-    center: new google.maps.LatLng(62.5883951, 22.0894009),
+    center: new google.maps.LatLng(62.9400624, 26.6827666),
     zoom: 6.25,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
@@ -10,7 +10,7 @@ google.maps.event.addDomListener(window, 'load', function() {
   var data = new MedicareDataSource;
 
   var view = new storeLocator.View(map, data, {
-    geolocation: false,
+    geolocation: true,
     features: data.getFeatures()
   });
 
