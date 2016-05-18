@@ -10,7 +10,7 @@ google.maps.event.addDomListener(window, 'load', function() {
   var data = new MedicareDataSource;
 
   var view = new storeLocator.View(map, data, {
-    geolocation: false,
+    geolocation: true,
     features: data.getFeatures()
   });
 
